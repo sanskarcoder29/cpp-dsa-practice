@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
@@ -26,4 +27,34 @@ int main() {
         cout << "Number is Not Prime";
 
     return 0;
+=======
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i;
+    bool isPrime = true;
+
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n <= 1) {
+        isPrime = false;
+    } 
+    else {
+        for (i = 2; i <= n/2; i++) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        cout << "Number is Prime";
+    else
+        cout << "Number is Not Prime";
+
+    return 0;
+>>>>>>> 253970dae92f9329549e71a3575b737f5567beaa
 }
